@@ -49,7 +49,7 @@ apis:
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/rates/master/_listings/xignite/gethistoricalcrossratesbidaskrange-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/rates/master/_listings/xignite/gethistoricalcrossratesasof-post.md
 x-common:
 - type: x-net-sdk
   url: http://xignite.github.io/DotNetSDK/
