@@ -33,7 +33,7 @@ apis:
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/rates/master/_listings/stripe/exchange-rates-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/rates/master/_listings/stripe/exchange-rates-currency-get.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
