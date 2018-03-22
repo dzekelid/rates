@@ -12,9 +12,9 @@ x-kinRank: "8"
 x-alexaRank: ""
 tags:
 - Federal Government   GSA
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/rates/master/_listings/gsa-per-diem-api/apis.yaml
+created: "2018-03-22"
+modified: "2018-03-22"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/gsa-per-diem-api/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: GSA Per Diem API
@@ -26,7 +26,7 @@ apis:
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/rates/master/_listings/gsa-per-diem-api/datastore-search-resource-id-8ea44bc4-22ba-4386-b84c-1494ab28964b-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/gsa-per-diem-api/datastore-search-resource-id-8ea44bc4-22ba-4386-b84c-1494ab28964b-get.md
 x-common:
 - type: x-website
   url: http://gsa.gov/portal/content/162379
