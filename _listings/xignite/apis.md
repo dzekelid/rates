@@ -41,15 +41,15 @@ modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/apis.yaml
 specificationVersion: "0.14"
 apis:
-- name: Xignite Interbanks
+- name: Xignite Money Markets
   description: Financial market data on-demand
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: ""
-  baseURL: https://www.xignite.com/xInterBanks.json/XigniteInterBanks
+  baseURL: https://www.xignite.com/xMoneyMarkets.json/XigniteMoneyMarkets
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/gethistoricalrates-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/listrates-post.md
 x-common:
 - type: x-net-sdk
   url: http://xignite.github.io/DotNetSDK/
