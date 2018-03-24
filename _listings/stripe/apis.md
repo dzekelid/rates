@@ -20,8 +20,8 @@ tags:
 - Change Log
 - Billing
 - API LIfeycle
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-23"
+modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -33,7 +33,7 @@ apis:
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-currency-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-get.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
