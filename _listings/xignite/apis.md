@@ -50,7 +50,7 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/listswaprates-post.md
-- name: Xignite Currencies Get Official Cross Rates
+- name: Xignite Currencies Get Official Cross Rates Bid Ask
   description: Returns an official cross-rate as of a historical date.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/280-xignite.jpg
   humanURL: http://www.xignite.com
@@ -58,7 +58,7 @@ apis:
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/getofficialcrossrates-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/getofficialcrossratesbidask-post.md
 x-common:
 - type: x-net-sdk
   url: http://xignite.github.io/DotNetSDK/
