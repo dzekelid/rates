@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Xignite Money Markets
-  description: Provide information about money market derivatives.
+  title: Xignite Money Markets List Swap Rates
+  description: Returns swap rate currencies and tenors
   version: 1.0.0
 host: www.xignite.com
 basePath: xMoneyMarkets.json/XigniteMoneyMarkets
