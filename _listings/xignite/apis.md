@@ -50,15 +50,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/listswaprates-post.md
-- name: Xignite Interbanks Search Rates
-  description: Search rate names and description
+- name: Xignite Interbanks Get Historical Rates
+  description: Returns a rate for a range of dates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/280-xignite.jpg
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xInterBanks.json/XigniteInterBanks
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/searchrates-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/gethistoricalrates-post.md
 x-common:
 - type: x-net-sdk
   url: http://xignite.github.io/DotNetSDK/
