@@ -1,9 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: Stripe
-  description: The Stripe REST API. Please see https://stripe.com/docs/api for more
-    details.
+  title: Stripe Get Exchange Rates
+  description: Returns a list of objects that contain the rates at which foreign currencies
+    are converted to one another. Only shows the currencies for which Stripe supports.
   termsOfService: https://stripe.com/us/terms/
   contact:
     name: Stripe Dev Platform Team
