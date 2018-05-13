@@ -50,16 +50,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/listswaprates-post.md
-- name: Xignite Currencies Get Historical Monthly Cross Rates Range
-  description: This operation returns a complete range of stock quotes for a currency
-    pair.
+- name: Xignite Interbanks List Rates
+  description: List supported interest rates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/280-xignite.jpg
   humanURL: http://www.xignite.com
-  baseURL: https://www.xignite.com/xCurrencies.json//XigniteCurrencies
+  baseURL: https://www.xignite.com/xInterBanks.json/XigniteInterBanks
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/gethistoricalmonthlycrossratesrange-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/xignite/listrates-post.md
 x-common:
 - type: x-net-sdk
   url: http://xignite.github.io/DotNetSDK/
