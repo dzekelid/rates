@@ -34,18 +34,18 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-currency-get.md
-- name: Stripe Get Exchange Rates
-  description: Returns a list of objects that contain the rates at which foreign currencies
-    are converted to one another. Only shows the currencies for which Stripe supports.
+- name: Stripe Get Exchange Rates Currency
+  description: Retrieves the exchange rates from the given currency to every supported
+    currency.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/stripe-black.png
   humanURL: https://stripe.com/
   baseURL: https://api.stripe.com/v1/
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-currency-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/stripe/exchange-rates-currency-get-postman.md
 x-common:
 - type: x-base
   url: https://api.stripe.com/
