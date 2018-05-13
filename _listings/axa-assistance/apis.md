@@ -15,17 +15,17 @@ modified: "2018-05-13"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/apis.md
 specificationVersion: "0.14"
 apis:
-- name: AXA Assistance Rates a medical consultation
-  description: Rates a medical consultation
+- name: AXA Assistance Rates an assignment.
+  description: Rates an assignment.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28187-www-axa-assistance-com.jpg
   humanURL: https://www.axa-assistance.com
   baseURL: https://sandbox.api.axa-assistance.com//
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/service-v1-medical-consultations-medical-consultation-id-rate-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/service-vexp-roadside-assignments-assignment-id-rate-post.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/service-v1-medical-consultations-medical-consultation-id-rate-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/service-vexp-roadside-assignments-assignment-id-rate-post-postman.md
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/axa-assitance
