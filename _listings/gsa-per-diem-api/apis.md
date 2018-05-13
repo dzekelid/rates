@@ -27,7 +27,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/gsa-per-diem-api/datastore-search-resource-id-8ea44bc4-22ba-4386-b84c-1494ab28964b-get.md
+- name: GSA Per Diem API Per Diem Rates
+  description: GSA sets rates for geographic areas it determines called primary destinations.
+    Areas outside the primary destinations are covered by the same, nation-wide standard
+    rate.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/gsa-logo.png
+  humanURL: http://gsa.gov/portal/content/162379
+  baseURL: https://inventory.data.gov//api/action/
+  tags: Rates
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/gsa-per-diem-api/datastore-search-resource-id-8ea44bc4-22ba-4386-b84c-1494ab28964b-get.md
 x-common:
+- type: x-website
+  url: http://gsa.gov/portal/content/162379
 - type: x-website
   url: http://gsa.gov/portal/content/162379
 include: []
