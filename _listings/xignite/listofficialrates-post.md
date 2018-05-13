@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Xignite Currencies
-  description: Provide real-time currency foreign exchange information and calculations.
+  title: Xignite Currencies List Official Rates
+  description: List supported official rates.
   version: 1.0.0
 host: www.xignite.com/xCurrencies.json
 basePath: /XigniteCurrencies
