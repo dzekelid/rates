@@ -1,14 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: GSA Per Diem API
-  description: Per Diem Rates are the allowed reimbursement rates for hotel stays
-    and meals for federal travelers. Rates are set for each of the federal government's
-    fiscal years (FY 2014 is October 1, 2013 to September 30, 2014.) GSA is responsible
-    for setting the rates in the continental United States.  Many businesses and other
-    organizations adopt these rates as well. GSA is making the rates available using
-    the CKAN's Action API via Data.gov to allow software developers programmatic access
-    the data and create innovative uses for it.
+  title: GSA Per Diem API Per Diem Rates
+  description: GSA sets rates for geographic areas it determines called primary destinations.
+    Areas outside the primary destinations are covered by the same, nation-wide standard
+    rate.
   version: 1.0.0
 host: inventory.data.gov
 basePath: /api/action/
