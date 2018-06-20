@@ -1,31 +1,52 @@
 ---
 name: AXA Assistance
+x-slug: axa-assistance
 description: AXA Assistance is a worldwide specialist for car insurance, travel, health
   and home services. Trust in Axa Assistance for your insurance!
 image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28187-www-axa-assistance-com.jpg
 x-kinRank: "8"
 x-alexaRank: "2107685"
-tags:
-- Technology
-- New
-- internet
-- Insurance
-created: "2018-05-13"
-modified: "2018-05-13"
+tags: Rates
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/apis.md
 specificationVersion: "0.14"
 apis:
+- name: AXA Assistance Rates a medical consultation
+  x-api-slug: axa-assistance
+  description: Rates a medical consultation
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28187-www-axa-assistance-com.jpg
+  humanURL: https://www.axa-assistance.com
+  baseURL: https://sandbox.api.axa-assistance.com////service/v1/medical_consultations/{medical_consultation_id}/rate
+  tags: Insurance,Ratesmedical, consultation
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/servicev1medical-consultationsmedical-consultation-idrate-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/servicev1medical-consultationsmedical-consultation-idrate-post-openapi.md
 - name: AXA Assistance Rates an assignment.
+  x-api-slug: axa-assistance
   description: Rates an assignment.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28187-www-axa-assistance-com.jpg
+  humanURL: https://www.axa-assistance.com
+  baseURL: https://sandbox.api.axa-assistance.com////service/vexp/roadside/assignments/{assignment_id}/rate
+  tags: Insurance,Ratesassignment.
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/servicevexproadsideassignmentsassignment-idrate-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/servicevexproadsideassignmentsassignment-idrate-post-openapi.md
+- name: AXA Assistance
+  x-api-slug: axa-assistance
+  description: AXA Assistance is a worldwide specialist for car insurance, travel,
+    health and home services. Trust in Axa Assistance for your insurance!
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28187-www-axa-assistance-com.jpg
   humanURL: https://www.axa-assistance.com
   baseURL: https://sandbox.api.axa-assistance.com//
   tags: Rates
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/service-vexp-roadside-assignments-assignment-id-rate-post.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/service-vexp-roadside-assignments-assignment-id-rate-post-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/axa-assistance/openapi.md
 x-common:
 - type: x-crunchbase
   url: https://crunchbase.com/organization/axa-assitance
