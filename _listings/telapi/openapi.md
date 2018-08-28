@@ -1,12 +1,13 @@
----
 swagger: "2.0"
 x-collection-name: TelAPI
 x-complete: 1
 info:
-  title: hetras Hotel API Version 0
-  version: v0
-host: api.hetras-certification.net
-basePath: /
+  title: TelAPI
+  description: telapi-is-a-rest-api--what-that-means-for-you-is-that-interacting-with-telapi-to-perform-all-of-your-telephony-needs-is-almost-as-simple-as-visiting-a-website--deeper-knowledge-regarding-rest-is-useful-when-developing-with-telapi-but-definitely-not-required--we-aim-to-provide-all-of-the-information-needed-for-working-with-our-rest-api-throughout-its-documentation-provided-here-so-even-if-you-are-new-to-rest-telapi-will-still-be-a-pleasure-to-use-
+  termsOfService: http://www.telapi.com/legal/tos
+  version: v2
+host: api.telapi.com
+basePath: v2/
 schemes:
 - http
 produces:
@@ -15,6 +16,58 @@ consumes:
 - application/json
 paths:
   /api/hotel/v0/hotels/{hotelId}/rateplans/{rateplanCode}/rates:
+    patch:
+      summary: Partially update a rate of the specified rateplan for the defined time
+        period.
+      description: "The hetras API is using this Patch Specification\r\n            to
+        partially update an existing resource. Currently this call only allows to
+        set the base price for non-derived rateplans if the rateplan\r\n            is
+        active and already loaded for the specified time period.\r\n            \r\n
+        \           A request example:\r\n            [\r\n              {\r\n                \"op\":
+        \"replace\", \"path\": \"/base_price\", \"value\": 120.00\r\n              }\r\n
+        \           ]\r\n            \r\n            For more details on how the API
+        responds to errors please check our documentation on \r\n            Error
+        Handling."
+      operationId: RatePlans_PatchRates
+      x-api-path-slug: apihotelv0hotelshotelidrateplansrateplancoderates-patch
+      parameters:
+      - in: header
+        name: App-Id
+        description: Application identifier
+      - in: header
+        name: App-Key
+        description: Application key
+      - in: query
+        name: from
+        description: Defines the last business day you would like to get rates for
+      - in: path
+        name: hotelId
+        description: The hotel id the rateplan belongs to
+      - in: body
+        name: patchRequest
+        description: A set of JSON Patch operations
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: rateplanCode
+        description: The code of the rateplan you want to update the daily rate details
+          for
+      - in: query
+        name: to
+        description: Defines the first business day you would like to get rates for
+      responses:
+        200:
+          description: OK
+      tags:
+      - Partially
+      - Update
+      - Rate
+      - Of
+      - Specified
+      - Rateplanthe
+      - Defined
+      - Time
+      - Period
     get:
       summary: Get the setup of the daily rates for a specific rateplan and a defined
         timeperiod.
@@ -68,6 +121,118 @@ paths:
       - Rateplan
       - Defined
       - Timeperiod
+  /api/hotel/v0/hotels/{hotelId}/rateplans/{rateplanCode}/rates/{businessDay}:
+    patch:
+      summary: Partially update a rate of the specified rateplan for a defined business
+        day.
+      description: "The hetras API is using this Patch Specification\r\n            to
+        partially update an existing resource. Currently this call only allows to
+        set the base price for non-derived rateplans if the rateplan\r\n            is
+        active and already loaded for the specified business day.\r\n            \r\n
+        \           A request example:\r\n            [\r\n              {\r\n                \"op\":
+        \"replace\", \"path\": \"/base_price\", \"value\": 120.00\r\n              }\r\n
+        \           ]\r\n            \r\n            For more details on how the API
+        responds to errors please check our documentation on \r\n            Error
+        Handling."
+      operationId: RatePlans_PatchRate
+      x-api-path-slug: apihotelv0hotelshotelidrateplansrateplancoderatesbusinessday-patch
+      parameters:
+      - in: header
+        name: App-Id
+        description: Application identifier
+      - in: header
+        name: App-Key
+        description: Application key
+      - in: path
+        name: businessDay
+        description: The business day of the daily rate you want to update
+      - in: path
+        name: hotelId
+        description: The hotel id the rateplan belongs to
+      - in: body
+        name: patchRequest
+        description: A set of JSON Patch operations
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: rateplanCode
+        description: The code of the rateplan you want to update the daily rate details
+          for
+      responses:
+        200:
+          description: OK
+      tags:
+      - Partially
+      - Update
+      - Rate
+      - Of
+      - Specified
+      - Rateplana
+      - Defined
+      - Business
+      - Day
+    get:
+      summary: Get the setup of a daily rate for a specific business day and rateplan.
+      description: Read the setup of the daily rate for the defined rateplan for that
+        specific business day.
+      operationId: RatePlans_GetRate
+      x-api-path-slug: apihotelv0hotelshotelidrateplansrateplancoderatesbusinessday-get
+      parameters:
+      - in: header
+        name: App-Id
+        description: Application identifier
+      - in: header
+        name: App-Key
+        description: Application key
+      - in: path
+        name: businessDay
+        description: The business day you want to get the rate setup for
+      - in: path
+        name: hotelId
+        description: The hotel id the rateplan belongs to
+      - in: path
+        name: rateplanCode
+        description: The code of the rateplan you want to see details for
+      responses:
+        200:
+          description: OK
+      tags:
+      - Setup
+      - Of
+      - Daily
+      - Ratea
+      - Specific
+      - Business
+      - Day
+      - Rateplan
+  /api/hotel/v0/hotels/{hotelId}/rateplans/{rateplanCode}:
+    get:
+      summary: Get all the details for a specific rateplan in the hotel.
+      description: Read the details about a specific rateplan for the defined hotel.
+      operationId: RatePlans_GetRateplan
+      x-api-path-slug: apihotelv0hotelshotelidrateplansrateplancode-get
+      parameters:
+      - in: header
+        name: App-Id
+        description: Application identifier
+      - in: header
+        name: App-Key
+        description: Application key
+      - in: path
+        name: hotelId
+        description: The hotel id the rateplan belongs to
+      - in: path
+        name: rateplanCode
+        description: The code of the rateplan you want to see details for
+      responses:
+        200:
+          description: OK
+      tags:
+      - Detailsa
+      - Specific
+      - Rateplan
+      - In
+      - Hotel
   /api/hotel/v0/hotels/{hotelId}/rateplans/{rateplanCode}/rates/$count:
     get:
       summary: Get the count of all active and loaded daily rates for the defined
@@ -112,4 +277,136 @@ paths:
       - Specified
       - Time
       - Period
----
+  /api/hotel/v0/hotels/{hotelId}/rateplans/$count:
+    get:
+      summary: Get the count of all rateplans in the hotel matching the given filter
+        criteria.
+      description: Get the count of all rateplans in the hotel matching the given
+        filter criteria..
+      operationId: RatePlans_GetRateplansCount
+      x-api-path-slug: apihotelv0hotelshotelidrateplanscount-get
+      parameters:
+      - in: header
+        name: App-Id
+        description: Application identifier
+      - in: header
+        name: App-Key
+        description: Application key
+      - in: query
+        name: baseRateplan
+        description: Return all rateplans having the specified rateplan as base rateplan
+      - in: query
+        name: channelCode
+        description: Return all rateplans sold through the specified channel
+      - in: query
+        name: channelGroup
+        description: Return all rateplans that are sold through at least one channel
+          out of the specified channel group
+      - in: query
+        name: commissionable
+        description: Return all rateplans having commisionable status
+      - in: query
+        name: group
+        description: Return all rateplans belonging to the specified rateplan group
+      - in: path
+        name: hotelId
+        description: The hotel you are counting the rateplans for
+      - in: query
+        name: includedServices
+        description: Return all rateplans having at least one of the specified services
+          included
+      - in: query
+        name: marketCodes
+        description: Return all rateplans having one of the specified values as a
+          market code
+      - in: query
+        name: roomTypes
+        description: Return all rateplans by which at least one of the specified room
+          types are sold
+      - in: query
+        name: sellingStatus
+        description: Specify which rateplans to return
+      responses:
+        200:
+          description: OK
+      tags:
+      - Count
+      - Of
+      - ""
+      - Rateplans
+      - In
+      - Hotel
+      - Matching
+      - Given
+      - Filter
+      - Criteria
+  /api/hotel/v0/hotels/{hotelId}/rateplans:
+    get:
+      summary: Get a list of rateplans for the specified hotel id matching the filter
+        criteria.
+      description: "With this call you can find rateplans for a hotel by different
+        filters. By default and without any filter criteria\r\n            defined
+        it will return you all active rateplans."
+      operationId: RatePlans_GetRateplans
+      x-api-path-slug: apihotelv0hotelshotelidrateplans-get
+      parameters:
+      - in: header
+        name: App-Id
+        description: Application identifier
+      - in: header
+        name: App-Key
+        description: Application key
+      - in: query
+        name: baseRateplan
+        description: Return all rateplans having the specified rateplan as base rateplan
+      - in: query
+        name: channelCode
+        description: Return all rateplans sold through the specified channel
+      - in: query
+        name: channelGroup
+        description: Return all rateplans that are sold through at least one channel
+          out of the specified channel group
+      - in: query
+        name: commissionable
+        description: Return all rateplans having commisionable status
+      - in: query
+        name: group
+        description: Return all rateplans belonging to the specified rateplan group
+      - in: path
+        name: hotelId
+        description: The hotel id you are trying to find rateplans for
+      - in: query
+        name: includedServices
+        description: Return all rateplans having at least one of the specified services
+          included
+      - in: query
+        name: inlinecount
+        description: Return total number of items for a given filter criteria
+      - in: query
+        name: marketCodes
+        description: Return all rateplans having one of the specified values as a
+          market code
+      - in: query
+        name: roomTypes
+        description: Return all rateplans by which at least one of the specified room
+          types are sold
+      - in: query
+        name: sellingStatus
+        description: Specify which rateplans to return
+      - in: query
+        name: skip
+        description: Amount of items to skip
+      - in: query
+        name: top
+        description: Amount of items to select
+      responses:
+        200:
+          description: OK
+      tags:
+      - Rateplansthe
+      - Specified
+      - Hotel
+      - Id
+      - Matching
+      - Filter
+      - Criteria

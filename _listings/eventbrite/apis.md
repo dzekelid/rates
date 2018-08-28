@@ -7,36 +7,31 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventb
 x-kinRank: "9"
 x-alexaRank: "643"
 tags: Rates
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/eventbrite/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Eventbrite Get Pricing Fee Rates
-  x-api-slug: eventbrite
+- name: Eventbrite - Get Pricing Fee Rates
+  x-api-slug: pricingfee-rates-get
   description: |-
     Returns a list of fee_rate objects for the different
     currencies, countries, assortments and sales channels we sell through
     today and in the future.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
   humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///pricing/fee_rates/
-  tags: Pricing,Fee,Rates
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Events, Tickets, Events, My API Stack, API LIfeyclessss, Stack Network, Stack,
+    Marketplace, Technology, Mobile, internet, API Provider, Tickets, Profiles, Registrations,
+    General Data, Relative Data, Pedestal, Historical Data API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/eventbrite/pricingfee-rates-get-openapi.md
-- name: Eventbrite
-  x-api-slug: eventbrite
-  description: Eventbrite brings people together through live experiences. Discover
-    events that match your passions, or create your own with online ticketing tools.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
-  humanURL: http://eventbriteapi.com
-  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
-  tags: Rates
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/eventbrite/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://europeana.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://eventbrite.stack.network
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/eventbrite/apidescription?format=internal&ver=1351170233000
 - type: x-authentication

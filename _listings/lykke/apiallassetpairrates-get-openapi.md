@@ -27,6 +27,79 @@ paths:
       - Asset
       - Pair
       - Rates
+  /api/AllAssetPairRates/{id}:
+    get:
+      summary: Get API All Asset Pair Rates
+      description: Get api all asset pair rates.
+      operationId: ApiAllAssetPairRatesByIdGet
+      x-api-path-slug: apiallassetpairratesid-get
+      parameters:
+      - in: path
+        name: id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Asset
+      - Pair
+      - Rates
+  /api/AssetPairDetailedRates:
+    get:
+      summary: Get API Assetpairdetailedrates
+      description: Get api assetpairdetailedrates.
+      operationId: ApiAssetPairDetailedRatesGet
+      x-api-path-slug: apiassetpairdetailedrates-get
+      parameters:
+      - in: query
+        name: assetId
+      - in: header
+        name: Authorization
+        description: access token
+      - in: query
+        name: period
+      - in: query
+        name: points
+      - in: query
+        name: withBid
+      responses:
+        200:
+          description: OK
+      tags:
+      - Assetpairdetailedrates
+  /api/AssetPairRates:
+    get:
+      summary: Get API Assetpairrates
+      description: Get api assetpairrates.
+      operationId: ApiAssetPairRatesGet
+      x-api-path-slug: apiassetpairrates-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: query
+        name: ignoreBase
+      responses:
+        200:
+          description: OK
+      tags:
+      - Assetpairrates
+  /api/AssetPairRates/{id}:
+    get:
+      summary: Get API Assetpairrates
+      description: Get api assetpairrates.
+      operationId: ApiAssetPairRatesByIdGet
+      x-api-path-slug: apiassetpairratesid-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: path
+        name: id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Assetpairrates
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

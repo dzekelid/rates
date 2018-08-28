@@ -7,83 +7,136 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykk
 x-kinRank: "8"
 x-alexaRank: "152167"
 tags: Rates
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Lykke Get API All Asset Pair Rates
-  x-api-slug: lykke
+- name: Wallet_Api - Get API All Asset Pair Rates
+  x-api-slug: apiallassetpairrates-get
   description: Get api all asset pair rates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
   humanURL: https://lykke.com
-  baseURL: https://////api/AllAssetPairRates
-  tags: Asset,Pair,Rates
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairrates-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairrates-get-openapi.md
-- name: Lykke Get API All Asset Pair Rates
-  x-api-slug: lykke
+- name: Wallet_Api - Get API All Asset Pair Rates
+  x-api-slug: apiallassetpairratesid-get
   description: Get api all asset pair rates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
   humanURL: https://lykke.com
-  baseURL: https://////api/AllAssetPairRates/{id}
-  tags: Asset,Pair,Rates
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairratesid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairratesid-get-openapi.md
-- name: Lykke Get API Assetpairdetailedrates
-  x-api-slug: lykke
+- name: Wallet_Api - Get API Assetpairdetailedrates
+  x-api-slug: apiassetpairdetailedrates-get
   description: Get api assetpairdetailedrates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
   humanURL: https://lykke.com
-  baseURL: https://////api/AssetPairDetailedRates
-  tags: Assetpairdetailedrates
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairdetailedrates-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairdetailedrates-get-openapi.md
-- name: Lykke Get API Assetpairrates
-  x-api-slug: lykke
+- name: Wallet_Api - Get API Assetpairrates
+  x-api-slug: apiassetpairrates-get
   description: Get api assetpairrates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
   humanURL: https://lykke.com
-  baseURL: https://////api/AssetPairRates
-  tags: Assetpairrates
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairrates-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairrates-get-openapi.md
-- name: Lykke Get API Assetpairrates
-  x-api-slug: lykke
+- name: Wallet_Api - Get API Assetpairrates
+  x-api-slug: apiassetpairratesid-get
   description: Get api assetpairrates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
   humanURL: https://lykke.com
-  baseURL: https://////api/AssetPairRates/{id}
-  tags: Assetpairrates
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairratesid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairratesid-get-openapi.md
-- name: Lykke
-  x-api-slug: lykke
-  description: Lykke is a movement to build one global marketplace that is a level
-    playing field where everyone has access.
+- name: Wallet_Api - Get API All Asset Pair Rates
+  x-api-slug: apiallassetpairrates-get
+  description: Get api all asset pair rates.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
   humanURL: https://lykke.com
   baseURL: https:////
-  tags: Rates
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairrates-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairrates-get-openapi.md
+- name: Wallet_Api - Get API All Asset Pair Rates
+  x-api-slug: apiallassetpairratesid-get
+  description: Get api all asset pair rates.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
+  humanURL: https://lykke.com
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairratesid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiallassetpairratesid-get-openapi.md
+- name: Wallet_Api - Get API Assetpairdetailedrates
+  x-api-slug: apiassetpairdetailedrates-get
+  description: Get api assetpairdetailedrates.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
+  humanURL: https://lykke.com
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairdetailedrates-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairdetailedrates-get-openapi.md
+- name: Wallet_Api - Get API Assetpairrates
+  x-api-slug: apiassetpairrates-get
+  description: Get api assetpairrates.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
+  humanURL: https://lykke.com
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairrates-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairrates-get-openapi.md
+- name: Wallet_Api - Get API Assetpairrates
+  x-api-slug: apiassetpairratesid-get
+  description: Get api assetpairrates.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/26564-lykke.jpg
+  humanURL: https://lykke.com
+  baseURL: https:////
+  tags: Technology, Marketplace, Blockchain, API Provider, Profiles, General Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairratesid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/rates/master/_listings/lykke/apiassetpairratesid-get-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://lyft.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://lykke.stack.network
 - type: x-crunchbase
   url: https://crunchbase.com/organization/lykke-ag
 - type: x-email

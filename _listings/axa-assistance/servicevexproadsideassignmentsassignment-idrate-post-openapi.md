@@ -15,27 +15,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /service/v1/medical_consultations/{medical_consultation_id}/rate:
-    post:
-      summary: Rates a medical consultation
-      description: Rates a medical consultation
-      operationId: postServiceV1Medical_consultationsMedical_consultation_idRate
-      x-api-path-slug: servicev1medical-consultationsmedical-consultation-idrate-post
-      parameters:
-      - in: body
-        name: body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: path
-        name: medical_consultation_id
-        description: ID of the medical consultation
-      responses:
-        200:
-          description: OK
-      tags:
-      - Insurance
-      - Ratesmedical
-      - consultation
   /service/vexp/roadside/assignments/{assignment_id}/rate:
     post:
       summary: Rates an assignment.

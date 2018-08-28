@@ -83,6 +83,23 @@ paths:
           description: OK
       tags:
       - Assetpairrates
+  /api/AssetPairRates/{id}:
+    get:
+      summary: Get API Assetpairrates
+      description: Get api assetpairrates.
+      operationId: ApiAssetPairRatesByIdGet
+      x-api-path-slug: apiassetpairratesid-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: access token
+      - in: path
+        name: id
+      responses:
+        200:
+          description: OK
+      tags:
+      - Assetpairrates
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
